@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica6</title>
+    <link rel="stylesheet" href="estilosP6.css">
+</head>
+<body>
+    <h1>Integración multimedia</h1>
+    <h2>Video</h2>
+    <video controls>
+        <source src="proyectoCircuitos.mp4" type="video/mp4">
+    </video>
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="luigi_audio.mp3" type="audio/mp3">
+    </audio>
+    <h2>Video de Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/P_8UDNYYBhw?si=1twX39h_kVrF5gNn&amp;start=1049" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Twitter</h2>
+    <blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/ZA16IBJbvM">pic.twitter.com/ZA16IBJbvM</a></p>&mdash; Banana Sans🍌💀 (@PlatanoSans) <a href="https://twitter.com/PlatanoSans/status/1965608580159307850?ref_src=twsrc%5Etfw">September 10, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <h2>FaceBook</h2>
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FBillGates%2Fposts%2Fpfbid0iNm7GmwsWw1iEEzxP3HcxfyG2X3Y26aZCDeiitFPBn45mryGoLtQt21VSncMCZiql&show_text=true&width=500" width="500" height="538" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    <h2>Geolocalización</h2>
+    <p>Presione el botón para obtener su ubicación.</p>
+    <button onclick="getLocation()">Presionar</button>
+    <p id="ubi"></p>
+    <script>
+      var x = document.getElementById("ubi");
+
+      function getLocation() {
+          if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+              x.innerHTML = "Su navegador no soporta la geolocalización.";
+          }
+      }
+      function showPosition(position) {
+          x.innerHTML = "Latitud: " + position.coords.latitude +
+          "<br>Longitud: " + position.coords.longitude;
+      }
+    </script>
+</html>

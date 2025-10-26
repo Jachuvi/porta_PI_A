@@ -1,0 +1,54 @@
+     body {
+        font-family: Arial, sans-serif; /* Usamos una fuente clara y legible */
+        background-color: white; /* Un color de fondo suave, similar al de Facebook */
+        color: gray; /* Color de texto oscuro para un buen contraste */
+        display: flex; /* Usamos Flexbox para centrar el contenido */
+        flex-direction: column; /* Apilamos los elementos verticalmente */
+        align-items: center; /* Centramos todo horizontalmente */
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Estilo para los títulos principales y secundarios */
+    h1, h2 {
+        color: blue; /* Un color azul para los títulos, inspirado en Facebook/Twitter */
+        border-bottom: 2px solid #ddd; /* Una línea sutil debajo de los títulos */
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        width: 100%; /* Hacemos que la línea ocupe todo el ancho del contenedor */
+        text-align: center; /* Centramos el texto de los títulos */
+    }
+
+    /* Estilos para los contenedores de multimedia */
+    video, audio, iframe, .twitter-tweet {
+        max-width: 100%; /* Asegura que los elementos no se salgan de la pantalla en dispositivos pequeños */
+        width: 600px; /* Ancho fijo para una apariencia uniforme */
+        margin-bottom: 30px; /* Espacio debajo de cada elemento multimedia */
+        border-radius: 8px; /* Bordes redondeados para un look más moderno */
+    }
+
+    /* Estilo específico para el botón de geolocalización */
+    button {
+        background-color: blue; /* Color de fondo azul */
+        color: white; /* Texto en color blanco */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+        border-radius: 5px;
+        transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+    }
+
+    /* Efecto al pasar el mouse sobre el botón */
+    button:hover {
+        background-color: blueviolet; /* Un azul un poco más oscuro */
+    }
+
+    /* Estilo para el párrafo que muestra la ubicación */
+    \#ubi {
+        font-size: 18px;
+        font-weight: bold;
+        color: gray;
+        margin-top: 15px;
+    }
+    

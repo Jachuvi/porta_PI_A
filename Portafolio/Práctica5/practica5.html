@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 5 - Formulario y Tabla</title>
+    <link rel="stylesheet" href="practica5.css">
+    <script src="practica5.js" defer></script>
+</head>
+<body>
+    <h1>Registro de datos</h1>
+    <form id="form">
+        <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo">
+        </div>
+        <fieldset class="campo">
+            <legend>Temas de interés</legend>
+            <label><input type="checkbox" name="interes" value="HTML"> HTML</label>
+            <label><input type="checkbox" name="interes" value="CSS"> CSS</label>
+            <label><input type="checkbox" name="interes" value="JS"> JS</label>
+        </fieldset>
+        <fieldset class="campo">
+            <legend>Preferencia</legend>
+            <label><input type="radio" name="preferencia" value="Principiante"> Principiante</label>
+            <label><input type="radio" name="preferencia" value="Intermedio"> Intermedio</label>
+            <label><input type="radio" name="preferencia" value="Avanzado"> Avanzado</label>
+        </fieldset>
+        <div class="campo">
+            <label for="fecha">Fecha y hora</label>
+            <input type="datetime-local" id="fecha" name="fecha">
+        </div>
+        <div class="campo">
+            <label for="color">Color favorito</label>
+            <input type="color" id="color" name="color" value="#3366ff">
+        </div>
+        <div class="campo">
+            <label for="nivel">Nivel de satisfacción</label>
+            <input type="range" id="nivel" name="nivel" min="0" max="10" value="5">
+        </div>
+        <button type="button" onclick="agregarFila()">Guardar en tabla</button>
+    </form>
+
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Temas</th>
+                <th>Preferencia</th>
+                <th>Fecha y hora</th>
+                <th>Color</th>
+                <th>Nivel</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpo">
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* Tablas simples (estilo básico) */
+
+.tabla-resp { 
+  overflow-x: auto; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+thead th {
+  text-align: left;
+  background: #eeeeee;
+  color: #222222;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #cccccc;
+}
+
+tbody tr:hover { background: #f9f9f9; }

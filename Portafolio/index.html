@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio | Inicio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <div class="caja fila">
+      <a class="marca" href="index.html">Portafolio</a>
+      <nav class="menu">
+        <a href="index.html" class="act">Inicio</a>
+        <a href="about.html">About</a>
+        <a href="practicas.html">Prácticas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="caja">
+    <section class="intro">
+      <h1>Portafolio Programación para Internet</h1>
+      <p>
+        En esta página podrás visitar las diferentes prácticas
+        hechas en la materia de Programación para Interntet
+      </p>
+      <div class="acciones">
+        <a class="boton" href="practicas.html">Ver prácticas</a>
+        <a class="boton boton-sec" href="about.html">Sobre mí</a>
+      </div>
+    </section>
+
+    <section class="dest">
+      <h2>Destacados</h2>
+      <div class="tarj">
+        <article class="tarjeta">
+          <h3>Prácticas</h3>
+          <p>Listado completo con enlaces a cada práctica.</p>
+          <a class="enl-tarj" href="practicas.html">Ir al listado</a>
+        </article>
+        <article class="tarjeta">
+          <h3>About</h3>
+          <p>Información personal y contacto</p>
+          <a class="enl-tarj" href="about.html">Conóceme</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="caja">
+      <small><span id="anio">2025</span> Jaime Chumacero Virgen · Portafolio</small>
+    </div>
+  </footer>
+
+  <script>
+    var y = new Date().getFullYear();
+    var el = document.getElementById('anio');
+    if (el) {
+       el.textContent = y; 
+      }
+  </script>
+</body>
+
+</html>
+

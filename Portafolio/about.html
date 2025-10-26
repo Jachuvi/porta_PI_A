@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio | About</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <div class="caja fila">
+      <a class="marca" href="index.html">Portafolio</a>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="about.html" class="act">About</a>
+        <a href="practicas.html">Prácticas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="caja">
+    <section>
+      <h1>Sobre mí</h1>
+      <p>
+        Mi nombre es Jaime Chumacero Virgen y está página recompila
+        las prácticas realizadas en la materia de Programación
+        para Internet.
+      </p>
+    </section>
+
+    <section>
+      <h2>Habilidades</h2>
+      <ul class="lista">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Puedes contactarme a través de:</p>
+      <ul>
+        <li>Correo: <a href="mailto:jaime.chumacero@anahuac.mx">jaime.chumacero@anahuac.mx</a></li>
+        <li>Instagram <a href="https://www.instagram.com/jachuvi/" target="_blank" rel="noopener">Jachuvi</a></li>
+        <li>LinkedIn: <a href="#" target="_blank" rel="noopener">Por venir</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="caja">
+      <small> <span id="anio">2025</span> Jaime Chumacero Virgen · Portafolio</small>
+    </div>
+  </footer>
+
+  <script>
+    var y = new Date().getFullYear();
+    var el = document.getElementById('anio');
+    if (el) {
+       el.textContent = y;
+       }
+  </script>
+</body>
+</html>

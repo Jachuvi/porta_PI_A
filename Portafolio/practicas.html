@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio | Prácticas</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/tables.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <div class="caja fila">
+      <a class="marca" href="index.html">Portafolio</a>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="about.html">About</a>
+        <a href="practicas.html" class="act">Prácticas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="caja">
+    <section>
+      <h1>Listado de Prácticas</h1>
+      <p>Selecciona una práctica para ver su contenido.</p>
+
+      <div class="tabla-resp">
+        <table>
+          <thead>
+            <tr>
+              <th>Práctica</th>
+              <th>Descripción</th>
+              <th>Enlace</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Práctica 2</td>
+              <td>Elementos básicos de HTML.</td>
+              <td><a href="Práctica2/skeleton.html">Abrir</a></td>
+            </tr>
+            <tr>
+              <td>Práctica 3</td>
+              <td>Tablas y estilos básicos.</td>
+              <td><a href="Práctica3/index.html">Abrir</a></td>
+            </tr>
+            <tr>
+              <td>Práctica 4</td>
+              <td>Manejo de elementos HTML con JavaScript.</td>
+              <td><a href="Práctica4/práctica4.html">Abrir</a></td>
+            </tr>
+            <tr>
+              <td>Práctica 5</td>
+              <td>Manipulación y modificación de contenido HTML con JS.</td>
+              <td><a href="Práctica5/practica5.html">Abrir</a></td>
+            </tr>
+            <tr>
+              <td>Práctica 6</td>
+              <td>Multimedia</td>
+              <td><a href="Practica6/practica6JCV.html">Abrir</a></td>
+            </tr>
+            <tr>
+              <td>Conversor</td>
+              <td>Conversor de unidades.</td>
+              <td><a href="conversor.html">Abrir</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Recursos</h2>
+      <ul>
+        <li><a href="Practica6/luigi_audio.mp3">Audio (P6)</a></li>
+        <li><a href="Practica6/proyectoCircuitos.mp4">Video (P6)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="caja">
+      <small><span id="anio">2025</span> Jaime Chumacero Virgen· Portafolio</small>
+    </div>
+  </footer>
+
+  <script>
+    var y = new Date().getFullYear();
+    var el = document.getElementById('anio');
+    if (el) { 
+      el.textContent = y; 
+    }
+  </script>
+</body>
+</html>

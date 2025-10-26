@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementos de una página</title>
+</head>
+<body>
+  <header>
+    <h1>Primer ejemplo de encabezado h1 </h1>
+    <h1>Segundo ejemplo del encabezado h1</h1>
+    <h2>Primer ejemplo del encabezado h2</h2>
+    <h2>Segundo ejemplo del encabezado h2</h2>
+    <h3>Primer ejemplo del encabezado h3</h3>
+    <h3>Segundo ejemplo del encabezado h3</h3>
+    <h4>Primer ejemplo del encabezado h4</h4>
+    <h4>Segundo ejemplo del encabezado h4</h4>
+    <h5>Primer ejemplo del encabezado h5</h5>
+    <h5>Segundo ejemplo del encabezado h5</h5>
+    <h6>Primer ejemplo del encabezado h6</h6>
+    <h6>Segundo y último ejemplo de encabezados</h6>
+  </header>
+
+  <section>
+    <h2>Comidas que me gustan</h2>
+    <ol>
+      <li>Tacos al pastor</li>
+      <li>Tacos de carnitas</li>
+      <li>Sopes</li>
+      <li>Chalupas</li>
+      <li>Mole Poblano</li>
+      <li>Consomé de pollo</li>
+      <li>Sushi</li>
+      <li>Cóctel de camarón</li>
+      <li>Unos tacos de barbacoa de res</li>
+      <li>Almejas</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Razones para ver Dune 2</h2>
+    <ul>
+      <li>Timothee Chalamet</li>
+      <li>Zendaya</li>
+      <li>Aparace Javier Bardeem</li>
+      <li>Gusanos gigantes</li>
+      <li>Timothee Chalamet</li>
+      <li>La advertencia de imponerle el papel de mésias a un simple mortal puede llevar a un fanatismo extremo</li>
+      <li>Rebecca Ferguson</li>
+      <li>Hans Zimmer se rifo el soundtrack</li>
+      <li>Lisan al'gaib</li>
+      <li>Muad Dib</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Mejores comidas en la Anahuac</h2>
+    <dl>
+      <dt>Barbaco</dt>
+      <dd>Sus chilaquiles de barbacoa de res son imperdibles</dd>
+      <dt>Panda Express</dt>
+      <dd>El miércoles hay 3X2</dd>
+      <dt>Sushi itto</dt>
+      <dd>Un lujo para salir de la rutina</dd>
+      <dt>Café diseño</dt>
+      <dd>A veces sirven un huevo con chorizo delicioso</dd>
+      <dt>Subway</dt>
+      <dd>Un sandwich pa cualquier gusto</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Formulario</h2>
+    <form action="#" method="post">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+      </div>
+      <div>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
+      </div>
+      <div>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" placeholder="Ingresa tu ciudad">
+      </div>
+      <div>
+        <label for="contrasena">Contrasena:</label>
+        <input type="password" id="contrasena" name="contrasena">
+      </div>
+      <div>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0">
+      </div>
+      <div>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha">
+      </div>
+      <fieldset>
+        <legend>Selecciona tus intereses (checkbox)</legend>
+        <label><input type="checkbox" name="intereses" value="musica"> Musica</label>
+        <label><input type="checkbox" name="intereses" value="deporte"> Deporte</label>
+        <label><input type="checkbox" name="intereses" value="arte"> Arte</label>
+        <label><input type="checkbox" name="intereses" value="tecnologia"> Tecnologia</label>
+      </fieldset>
+      <fieldset>
+        <legend>Selecciona tu opcion preferida (radio)</legend>
+        <label><input type="radio" name="preferencia" value="opcion1"> Opcion 1</label>
+        <label><input type="radio" name="preferencia" value="opcion2"> Opcion 2</label>
+        <label><input type="radio" name="preferencia" value="opcion3"> Opcion 3</label>
+        <label><input type="radio" name="preferencia" value="opcion4"> Opcion 4</label>
+      </fieldset>
+      <div>
+        <label for="correo">Correo electronico:</label>
+        <input type="email" id="correo" name="correo" placeholder="nombre@dominio.com">
+      </div>
+      <div>
+        <label for="archivo">Archivo:</label>
+        <input type="file" id="archivo" name="archivo">
+      </div>
+      <div>
+        <label for="color">Color favorito:</label>
+        <input type="color" id="color" name="color" value="#0000ff">
+      </div>
+      <div>
+        <label for="rango">Rango:</label>
+        <input type="range" id="rango" name="rango" min="0" max="100" value="50">
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
